@@ -1,8 +1,10 @@
+/* mengatur lebar dan margin parrent div */
 .container {
     width: 1000px;
     margin: 0 auto;
 }
 
+/* setting ID header  */
 #header {
     background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     min-height: 50px;
@@ -11,7 +13,9 @@
     color: white;
 }
 
-.jumbotron::before:hover {
+/* setting class content */
+.content{
+    position: relative;
     width: 100%;
     padding: 300px;
     box-sizing: border-box;
@@ -20,18 +24,23 @@
     color: white;
     background-image: url(img/sky-night.png);
     background-size: cover;
-    filter: blur(10px);
+    filter: blur(9px);
 }
-.jumbotron::after:hover{
-    width: 100%;
-    padding: 300px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 40px;
-    color: white;
+
+/* efek content saat berada di area content */
+.content:hover{
+    background-image: url(img/black.png);
+    color: transparent;
+    filter: none;
+}
+/* efek content saat di klik */
+  .content:active {
     background-image: url(img/sky-night.png);
-    background-size: cover;
-}
+    filter: none;
+    color:white;
+  }
+  
+/* bagian footer */
 #footer {
     background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
     min-height: 50px;
