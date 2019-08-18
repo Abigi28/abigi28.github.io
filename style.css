@@ -11,7 +11,7 @@
     color: white;
 }
 
-.jumbotron {
+.jumbotron::before:hover {
     width: 100%;
     padding: 300px;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
     background-size: cover;
     filter: blur(10px);
 }
-.jumbotron ::after:hover{
+.jumbotron::after:hover{
     width: 100%;
     padding: 300px;
     box-sizing: border-box;
