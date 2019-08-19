@@ -30,7 +30,7 @@
 /* efek content saat berada di area content */
 .content:hover {
     background-image: url(img/black.png);
-    background-position: center;
+    background-position: center center;
     color: transparent;
     filter: none;
 }
